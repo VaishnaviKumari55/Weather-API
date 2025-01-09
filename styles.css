@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #2f3b52;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .countries-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .country-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 16px;
+    /* background: linear-gradient(to bottom, #f7f7f7, #e0e0e0); */
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    color: black;
+
+    
+  }
+  
+  .country-card img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    /* background-color: blue; */
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    tex
+  }
+  
+  button:hover {
+    background-color: #0d4784;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /* Close button inside modal */
+.close-weather-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .close-weather-btn:hover {
+    background-color: #a71d2a;
+  }
+  
+  @media (max-width: 768px) {
+    .countries-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

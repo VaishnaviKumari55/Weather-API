@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Forecast</h1>
+    <div id="countries-grid" class="countries-grid"></div>
+  </div>
+
+  <!-- Weather Modal -->
+  <div id="weather-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close-button">&times;</span>
+      <h2 id="modal-title">Weather Details</h2>
+      <p id="temperature"></p>
+      <p id="condition"></p>
+      <button id="close-weather-btn" class="close-weather-btn">Close</button>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
